@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Auction.Controllers;
 
 [ApiController]
-[Route("api/v1/auction")]
+[Route("api/v1/auctions")]
 public class AuctionController : ControllerBase
 {
     [HttpPost]
@@ -17,7 +17,16 @@ public class AuctionController : ControllerBase
     {
         return Ok();
     }
-    
+
     [HttpPut]
-    public a
+    public async Task<IActionResult> UpdateAsync()
+    {
+        return Ok();
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAuctionsAsync()
+    {
+        return Ok();
+    }
 }

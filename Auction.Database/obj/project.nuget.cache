@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "dpcjxQ3BpTmOgja3ly3UKKuqMCb842ZHrUdzkh2Vhdid+T3r+v9s432I8d7BMAgGzYFpdYMazoqbRGd1hMR6dw==",
+  "dgSpecHash": "KKtoVbKiHYyixZLlR+DZgeOxLxgZn3NFMvLGkvGSr9h3IsEVTEPZo6ktfKOUa+tvhhJUL/WXbjBo+uVZxF0lHw==",
   "success": true,
   "projectFilePath": "/Users/goodgod/Code/Rider/MyProjects/Auction/Auction.Database/Auction.Database.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/goodgod/.nuget/packages/fluentresults/3.15.2/fluentresults.3.15.2.nupkg.sha512",
+    "/Users/goodgod/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
+    "/Users/goodgod/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/goodgod/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/goodgod/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.1/microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "/Users/goodgod/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -6,4 +6,18 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Lots\" />
+      <Folder Include="User\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Auction.Domain\Auction.Domain.csproj" />
+      <ProjectReference Include="..\Auction.Infastracture\Auction.Infastracture.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.0.1" />
+    </ItemGroup>
+
 </Project>

@@ -8,11 +8,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1721e223-b2d2-446a-b7b4-da9bc5fe1ac6" name="Changes" comment="" />
+    <list default="true" id="1721e223-b2d2-446a-b7b4-da9bc5fe1ac6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/Auction.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auction.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/Auction.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/Auction.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/Auction.Database.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/Auction.Database.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/Auction.Database.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/Auction.Database.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/Debug/net7.0/Auction.Database.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/Debug/net7.0/Auction.Database.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/Debug/net7.0/Auction.Database.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/Debug/net7.0/Auction.Database.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Database/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Infastracture/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Infastracture/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/Auction.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/Auction.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/Controllers/AuctionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/Controllers/AuctionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/Auction.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/Auction.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/Debug/net7.0/Auction.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/Debug/net7.0/Auction.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/Debug/net7.0/Auction.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/Debug/net7.0/Auction.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2SmA5vu0UlqLpcbgr8uTBYX9XrJ" />
   <component name="ProjectViewState">
@@ -37,7 +70,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.Auction/Dockerfile">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Auction: http">
     <configuration name="Auction: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auction/Auction.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -81,7 +114,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
@@ -111,6 +147,7 @@
       <updated>1689741203960</updated>
       <workItem from="1689741205243" duration="1998000" />
       <workItem from="1689746272987" duration="9390000" />
+      <workItem from="1689826598472" duration="16865000" />
     </task>
     <servers />
   </component>
@@ -119,5 +156,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandValidator.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandValidator.cs" initialLine="9" containingFunctionPresentation="Method 'Validate'">
+            <startOffsets>
+              <option value="265" />
+            </startOffsets>
+            <endOffsets>
+              <option value="285" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandHandler.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandHandler.cs" initialLine="9" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="295" />
+            </startOffsets>
+            <endOffsets>
+              <option value="331" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

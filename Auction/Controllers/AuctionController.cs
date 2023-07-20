@@ -1,3 +1,5 @@
+using Auction.Application.Auctions.CreateAuction;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Auction.Controllers;
@@ -6,9 +8,17 @@ namespace Auction.Controllers;
 [Route("api/v1/auctions")]
 public class AuctionController : ControllerBase
 {
-    [HttpPost]
-    public async Task<IActionResult> CreateAuctionAsync()
+    private readonly IMediator mediator;
+
+    public AuctionController(IMediator mediator)
     {
+        this.mediator = mediator;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateAuctionAsync(CreateAuctionCommand command, CancellationToken cancellationToken)
+    {
+        await mediator.Send(command, cancellationToken);
         return Ok();
     }
 

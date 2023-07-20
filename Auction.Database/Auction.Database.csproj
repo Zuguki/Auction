@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Auction.Application\Auction.Application.csproj" />
+      <ProjectReference Include="..\Auction.Infastracture\Auction.Infastracture.csproj" />
+    </ItemGroup>
+
 </Project>

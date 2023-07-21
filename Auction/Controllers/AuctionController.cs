@@ -18,7 +18,10 @@ public class AuctionController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateAuctionAsync(CreateAuctionCommand command, CancellationToken cancellationToken)
     {
-        await mediator.Send(command, cancellationToken);
+        var response = await mediator.Send(command, cancellationToken);
+        if (response.IsFailed)
+            return BadRequest(string.Join(',', response.Reasons.Select(r => r.Message)));
+        
         return Ok();
     }
 

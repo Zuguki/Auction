@@ -3,10 +3,11 @@ using MediatR;
 
 namespace Auction.Application.Auctions.CreateAuction;
 
-public class CreateAuctionCommandHandler : IRequestHandler<CreateAuctionCommand, ResultBase>
+public class CreateAuctionCommandHandler : IRequestHandler<CreateAuctionCommand, Result>
 {
-    public Task<ResultBase> Handle(CreateAuctionCommand request, CancellationToken cancellationToken)
+    public Task<Result> Handle(CreateAuctionCommand request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<ResultBase>(Result.Ok(Guid.NewGuid()));
+        // return Task.FromResult<ResultBase>(Result.Ok(Guid.NewGuid()));
+        return Task.FromResult(Result.Ok());
     }
 }

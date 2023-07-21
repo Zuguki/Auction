@@ -20,7 +20,7 @@ public class CreateAuctionCommandValidator : IValidator<CreateAuctionCommand>
             return Result.Fail("Передана некорректная дата начала аукциона.");
         
         if (request.DateEnd <= request.DateStart)
-            return Result.Fail("Дата завершения не может быть меньше или равна даты начала.");
+            return Result.Fail("Дата завершения не может быть меньше или равна дате начала.");
 
         return Result.Ok();
     }

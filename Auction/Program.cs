@@ -11,10 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
-// builder.Services.AddMediatR(config =>
-// {
-//     config.AsScoped();
-// }, assemblies);
+// builder.Services.AddMediatR(cfg => cfg.AsScoped(), assemblies);
 
 builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 
@@ -22,7 +19,7 @@ var openGenericType = typeof(IValidator<>);
 var types = assemblies
     .SelectMany(a => a
     .GetTypes()
-    .Where(t => !t.IsAbstract && !t.IsGenericTypeDefinition));
+    .Where(t => t is {IsAbstract: false, IsGenericTypeDefinition: false}));
 
 foreach (var type in types)
 {

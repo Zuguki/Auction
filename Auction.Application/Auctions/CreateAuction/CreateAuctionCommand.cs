@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Auction.Application.Auctions.CreateAuction;
 
-public record CreateAuctionCommand : IRequest<ResultBase>
+public record CreateAuctionCommand : IRequest<Result>
 {
     [JsonPropertyName("name")]
     public string? Name { get; init; }

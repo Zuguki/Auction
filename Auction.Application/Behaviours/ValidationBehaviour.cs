@@ -24,6 +24,7 @@ public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TReque
         {
             var result = new TResponse();
             result.Reasons.AddRange(validationResult.Reasons);
+            return result;
         }
 
         return await next();

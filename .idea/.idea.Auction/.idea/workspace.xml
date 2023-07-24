@@ -11,9 +11,9 @@
     <list default="true" id="1721e223-b2d2-446a-b7b4-da9bc5fe1ac6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Application/Auction.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auction.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/Create/CreateAuctionCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/Create/CreateAuctionCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Application/Auctions/CreateAuction/CreateAuctionCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Auctions/Create/CreateAuctionCommandValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Application/Behaviours/ValidationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/Behaviours/ValidationBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Application/obj/Auction.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/Auction.Application.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Application/obj/Debug/net7.0/Auction.Application.assets.cache" afterDir="false" />
@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/Auction.Database/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Database/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Database/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Database/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auction.Domain/Auction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Domain/Auction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Domain/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction.Infastracture/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Auction.Infastracture/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auction/Auction.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auction/Auction.csproj" afterDir="false" />
@@ -50,33 +51,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53ef023021384ecda1b51090d155eb581e4800/9d/642f4ec1/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57ef264888488357640f23a308ccecd818012805b7b56dd32bd469a819f56ee/IPipelineBehavior.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/78c860a4a0696d27b2942ef6996b8ceec84aec6b56a4221bd8ce81cc42954d/RequestHandlerWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aca45508683a6169bab9e8bd96b7cda607d638cacfaa31173c8c278c45/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4bc324a395d24ed12db75b0a81536b642509aa14825bf114d9b7c934e2b/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2SmA5vu0UlqLpcbgr8uTBYX9XrJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/goodgod/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/goodgod/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Auction: http">
     <configuration name="Auction: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auction/Auction.csproj" />
@@ -155,14 +161,63 @@
       <workItem from="1689741205243" duration="1998000" />
       <workItem from="1689746272987" duration="9390000" />
       <workItem from="1689826598472" duration="19207000" />
-      <workItem from="1689921821235" duration="2277000" />
+      <workItem from="1689921821235" duration="2873000" />
+      <workItem from="1690173319153" duration="9029000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Extensions.Logging" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Auction.Application/Auctions/Create/CreateAuctionCommandHandler.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/Auction.Application/Auctions/Create/CreateAuctionCommandHandler.cs" initialLine="16" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="452" />
+            </startOffsets>
+            <endOffsets>
+              <option value="539" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Auction.Application/Behaviours/ValidationBehaviour.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Auction.Application/Behaviours/ValidationBehaviour.cs" initialLine="21" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="702" />
+            </startOffsets>
+            <endOffsets>
+              <option value="732" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Auction.Database/Auction/InMemoryAuctionsRepository.cs</url>
+          <line>11</line>
+          <properties documentPath="$PROJECT_DIR$/Auction.Database/Auction/InMemoryAuctionsRepository.cs" initialLine="11" containingFunctionPresentation="Method 'AddAsync'">
+            <startOffsets>
+              <option value="369" />
+            </startOffsets>
+            <endOffsets>
+              <option value="482" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

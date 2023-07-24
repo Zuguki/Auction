@@ -7,4 +7,5 @@ public enum AuctionStatus
     WaitBidding = 2,
     Bidding = 3,
     Complete = 4,
+    Cancel = 5,
 }

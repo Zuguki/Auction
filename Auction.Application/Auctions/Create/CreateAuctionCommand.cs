@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using FluentResults;
 using MediatR;
 
-namespace Auction.Application.Auctions.CreateAuction;
+namespace Auction.Application.Auctions.Create;
 
 public record CreateAuctionCommand : IRequest<Result>
 {

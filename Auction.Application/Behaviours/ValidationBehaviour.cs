@@ -1,13 +1,12 @@
-using Auction.Application.Auctions.CreateAuction;
 using Auction.Application.Mediator;
 using FluentResults;
 using MediatR;
 
 namespace Auction.Application.Behaviours;
 
-public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-        where TResponse : ResultBase, new()
-        where TRequest : IRequest<TResponse>
+public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> 
+    where TResponse : ResultBase, new() 
+    where TRequest : IRequest<TResponse>
 {
     private readonly IValidator<TRequest> validator;
 
@@ -16,6 +15,7 @@ public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TReque
         this.validator = validator;
     }
 
+    /// <inheritdoc />
     public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next,
         CancellationToken cancellationToken)
     {

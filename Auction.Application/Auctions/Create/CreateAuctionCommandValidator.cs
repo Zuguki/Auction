@@ -1,7 +1,7 @@
 using Auction.Application.Mediator;
 using FluentResults;
 
-namespace Auction.Application.Auctions.CreateAuction;
+namespace Auction.Application.Auctions.Create;
 
 public class CreateAuctionCommandValidator : IValidator<CreateAuctionCommand>
 {

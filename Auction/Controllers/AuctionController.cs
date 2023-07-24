@@ -1,4 +1,4 @@
-using Auction.Application.Auctions.CreateAuction;
+using Auction.Application.Auctions.Create;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Auction.Controllers;
+namespace ChangeCreationStateAuctionCommand.Controllers;
 
 [ApiController]
 [Route("api/v1/auctions/lots")]

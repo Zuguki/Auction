@@ -1,6 +1,7 @@
-using Auction.Domain;
+using Auction.Application;
+using ChangeCreationStateAuctionCommand.Domain;
 
-namespace Auction.Application;
+namespace ChangeCreationStateAuctionCommand.Application;
 
 public class UnitOfWork
 {

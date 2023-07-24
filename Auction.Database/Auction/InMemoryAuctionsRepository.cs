@@ -1,7 +1,8 @@
 using System.Collections.Concurrent;
 using Auction.Application;
+using ChangeCreationStateAuctionCommand.Application;
 
-namespace Auction.Database.Auction;
+namespace ChangeCreationStateAuctionCommand.Database.Auction;
 
 public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
 {
@@ -41,7 +42,7 @@ public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
             existedAuction.UpdateName(auction.Name!);
             existedAuction.UpdateDateStart(auction.DateStart);
             existedAuction.UpdateDateEnd(auction.DateEnd);
-            existedAuction.ChangeIsCreation();
+            existedAuction.ChangeCreationState();
 
             if (auction.IsCanceled)
                 existedAuction.Cancel();

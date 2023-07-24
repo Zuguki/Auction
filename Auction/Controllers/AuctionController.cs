@@ -1,9 +1,10 @@
 using Auction.Application.Auctions.Cancel;
 using Auction.Application.Auctions.Create;
+using Auction.Application.Auctions.ChangeCreationAuction;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Auction.Controllers;
+namespace ChangeCreationStateAuctionCommand.Controllers;
 
 [ApiController]
 [Route("api/v1/auctions")]
@@ -21,8 +22,13 @@ public class AuctionController : BaseController
         CancellationToken cancellationToken) =>
         ConvertToActionResult(await mediator.Send(command, cancellationToken));
 
-    [HttpDelete]
-    public async Task<IActionResult> DeleteAuctionAsync([FromQuery] CancelAuctionCommand command,
+    [HttpPost("cancel")]
+    public async Task<IActionResult> CancelAuctionAsync(CancelAuctionCommand command,
+        CancellationToken cancellationToken) =>
+        ConvertToActionResult(await mediator.Send(command, cancellationToken));
+    
+    [HttpPost("changeCreationState")]
+    public async Task<IActionResult> CompleteCreationAsync(ChangeAuctionCreationStateCommand command,
         CancellationToken cancellationToken) =>
         ConvertToActionResult(await mediator.Send(command, cancellationToken));
 

@@ -1,4 +1,4 @@
-using Auction.Application.Mediator;
+using ChangeCreationStateAuctionCommand.Application.Mediator;
 using FluentResults;
 
 namespace Auction.Application.Auctions.Create;

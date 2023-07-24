@@ -1,6 +1,6 @@
 using FluentResults;
 
-namespace Auction.Domain;
+namespace ChangeCreationStateAuctionCommand.Domain;
 
 public class Lot
 {

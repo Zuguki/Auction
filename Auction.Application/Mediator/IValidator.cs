@@ -1,7 +1,7 @@
 using FluentResults;
 using MediatR;
 
-namespace Auction.Application.Mediator;
+namespace ChangeCreationStateAuctionCommand.Application.Mediator;
 
 public interface IValidator<in T> where T : IBaseRequest
 {

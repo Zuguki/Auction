@@ -1,11 +1,12 @@
+using Auction.Application.Auctions.Cancel;
 using ChangeCreationStateAuctionCommand.Application.Mediator;
 using FluentResults;
 
-namespace Auction.Application.Auctions.Cancel;
+namespace Auction.Application.Auctions.ChangeCreationAuction;
 
-public class CancelAuctionCommandValidator : IValidator<CancelAuctionCommand>
+public class ChangeAuctionCreationStateCommandValidator : IValidator<ChangeAuctionCreationStateCommand>
 {
-    public Result Validate(CancelAuctionCommand? request)
+    public Result Validate(ChangeAuctionCreationStateCommand? request)
     {
         if (request is null)
             return Result.Fail("Не удалось распознать данные.");

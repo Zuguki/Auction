@@ -1,6 +1,7 @@
 using Auction.Application;
+using ChangeCreationStateAuctionCommand.Application;
 
-namespace Auction.Database.Bet;
+namespace ChangeCreationStateAuctionCommand.Database.Bet;
 
 public class InMemoryBetsRepository : IRepository<Domain.Bet>
 {

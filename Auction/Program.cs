@@ -1,9 +1,10 @@
 using Auction.Application;
-using Auction.Application.Behaviours;
-using Auction.Application.Mediator;
-using Auction.Database.Auction;
-using Auction.Database.Bet;
-using Auction.Database.Lot;
+using ChangeCreationStateAuctionCommand.Application;
+using ChangeCreationStateAuctionCommand.Application.Behaviours;
+using ChangeCreationStateAuctionCommand.Application.Mediator;
+using ChangeCreationStateAuctionCommand.Database.Auction;
+using ChangeCreationStateAuctionCommand.Database.Bet;
+using ChangeCreationStateAuctionCommand.Database.Lot;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(cfg => cfg.AsScoped(), assemblies);
-builder.Services.AddSingleton<IRepository<Auction.Domain.Auction>, InMemoryAuctionsRepository>();
-builder.Services.AddSingleton<IRepository<Auction.Domain.Bet>, InMemoryBetsRepository>();
-builder.Services.AddSingleton<IRepository<Auction.Domain.Lot>, InMemoryLotsRepository>();
+builder.Services.AddSingleton<IRepository<ChangeCreationStateAuctionCommand.Domain.Auction>, InMemoryAuctionsRepository>();
+builder.Services.AddSingleton<IRepository<ChangeCreationStateAuctionCommand.Domain.Bet>, InMemoryBetsRepository>();
+builder.Services.AddSingleton<IRepository<ChangeCreationStateAuctionCommand.Domain.Lot>, InMemoryLotsRepository>();
 builder.Services.AddSingleton<UnitOfWork>();
 
 

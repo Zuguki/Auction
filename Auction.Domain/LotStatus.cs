@@ -1,4 +1,4 @@
-namespace Auction.Domain;
+namespace ChangeCreationStateAuctionCommand.Domain;
 
 public enum LotStatus
 {

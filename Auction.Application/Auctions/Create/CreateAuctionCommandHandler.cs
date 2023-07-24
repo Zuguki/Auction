@@ -1,3 +1,4 @@
+using ChangeCreationStateAuctionCommand.Application;
 using FluentResults;
 using MediatR;
 
@@ -14,7 +15,7 @@ public class CreateAuctionCommandHandler : IRequestHandler<CreateAuctionCommand,
 
     public async Task<Result> Handle(CreateAuctionCommand request, CancellationToken cancellationToken)
     {
-        var auction = new Domain.Auction(request.Name!, 0, request.DateStart, request.DateEnd);
+        var auction = new ChangeCreationStateAuctionCommand.Domain.Auction(request.Name!, 0, request.DateStart, request.DateEnd);
         
         await unitOfWork.Auctions.AddAsync(new[] { auction }, cancellationToken);
         return Result.Ok();

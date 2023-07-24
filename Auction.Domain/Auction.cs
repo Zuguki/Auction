@@ -1,4 +1,4 @@
-namespace Auction.Domain;
+namespace ChangeCreationStateAuctionCommand.Domain;
 
 public class Auction
 {
@@ -61,7 +61,7 @@ public class Auction
     
     public void UpdateDateEnd(DateTime dateTime) => DateEnd = dateTime;
 
-    public void ChangeIsCreation() => IsCreation = !IsCreation;
+    public void ChangeCreationState() => IsCreation = !IsCreation;
 
     public void Cancel() => IsCanceled = true;
 }

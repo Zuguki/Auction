@@ -1,7 +1,7 @@
 using FluentResults;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Auction.Controllers;
+namespace ChangeCreationStateAuctionCommand.Controllers;
 
 [ApiController]
 public class BaseController : ControllerBase

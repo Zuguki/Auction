@@ -1,6 +1,7 @@
 using Auction.Application;
+using ChangeCreationStateAuctionCommand.Application;
 
-namespace Auction.Database.Lot;
+namespace ChangeCreationStateAuctionCommand.Database.Lot;
 
 public class InMemoryLotsRepository : IRepository<Domain.Lot>
 {

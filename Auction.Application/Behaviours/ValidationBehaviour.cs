@@ -1,8 +1,8 @@
-using Auction.Application.Mediator;
+using ChangeCreationStateAuctionCommand.Application.Mediator;
 using FluentResults;
 using MediatR;
 
-namespace Auction.Application.Behaviours;
+namespace ChangeCreationStateAuctionCommand.Application.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> 
     where TResponse : ResultBase, new() 

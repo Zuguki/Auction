@@ -1,20 +1,21 @@
+using Auction.Application.Auctions.Cancel;
 using ChangeCreationStateAuctionCommand.Application;
 using ChangeCreationStateAuctionCommand.Domain;
 using FluentResults;
 using MediatR;
 
-namespace Auction.Application.Auctions.Cancel;
+namespace Auction.Application.Auctions.ChangeCreationAuction;
 
-public class CancelAuctionCommandHandler : IRequestHandler<CancelAuctionCommand, Result>
+public class ChangeAuctionCreationStateCommandHandler : IRequestHandler<ChangeAuctionCreationStateCommand, Result>
 {
     private readonly UnitOfWork unitOfWork;
 
-    public CancelAuctionCommandHandler(UnitOfWork unitOfWork)
+    public ChangeAuctionCreationStateCommandHandler(UnitOfWork unitOfWork)
     {
         this.unitOfWork = unitOfWork;
     }
 
-    public async Task<Result> Handle(CancelAuctionCommand request, CancellationToken cancellationToken)
+    public async Task<Result> Handle(ChangeAuctionCreationStateCommand request, CancellationToken cancellationToken)
     {
         var allAuctions = await unitOfWork.Auctions.GetAsync(cancellationToken);
         var existedAuction = allAuctions.FirstOrDefault(auction => auction.Id == request.AuctionId);
@@ -25,9 +26,9 @@ public class CancelAuctionCommandHandler : IRequestHandler<CancelAuctionCommand,
         if (existedAuction.Status is AuctionStatus.Bidding or AuctionStatus.Complete or AuctionStatus.Cancel)
             return Result.Fail("Данный аукцион нельзя отменить.");
 
-        existedAuction.Cancel();
-        await unitOfWork.Auctions.UpdateAsync(new[] { existedAuction }, cancellationToken);
-        
+        existedAuction.ChangeCreationState();
+        await unitOfWork.Auctions.UpdateAsync(new[] {existedAuction}, cancellationToken);
+
         return Result.Ok();
     }
 }

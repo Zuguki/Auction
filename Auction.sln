@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction", "Auction\Auction.csproj", "{DE22884F-C96D-4DBB-8B08-33699801F5B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Auction", "GG.Auction\GG.Auction.csproj", "{DE22884F-C96D-4DBB-8B08-33699801F5B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Application", "Auction.Application\Auction.Application.csproj", "{F4F7CC30-92E7-453A-B051-D0C8CFDBFE5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Auction.Application", "GG.Auction.Application\GG.Auction.Application.csproj", "{F4F7CC30-92E7-453A-B051-D0C8CFDBFE5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Domain", "Auction.Domain\Auction.Domain.csproj", "{C4EBD376-0EF7-4356-AD93-BA8AD25F7EDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Auction.Domain", "GG.Auction.Domain\GG.Auction.Domain.csproj", "{C4EBD376-0EF7-4356-AD93-BA8AD25F7EDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Database", "Auction.Database\Auction.Database.csproj", "{88418414-3292-461D-B21C-434594091488}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Auction.Database", "GG.Auction.Database\GG.Auction.Database.csproj", "{88418414-3292-461D-B21C-434594091488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Infastracture", "Auction.Infastracture\Auction.Infastracture.csproj", "{339E2955-0BB7-4F34-BD08-2B79622C7817}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Auction.Infastracture", "GG.Auction.Infastracture\GG.Auction.Infastracture.csproj", "{339E2955-0BB7-4F34-BD08-2B79622C7817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

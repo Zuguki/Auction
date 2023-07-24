@@ -4,7 +4,7 @@ namespace Auction.Controllers;
 
 [ApiController]
 [Route("api/v1/users")]
-public class UserController : ControllerBase
+public class UserController : BaseController
 {
     [HttpPost]
     public async Task<IActionResult> AuthAsync()

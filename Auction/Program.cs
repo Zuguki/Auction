@@ -1,4 +1,3 @@
-using System.Reflection;
 using Auction.Application;
 using Auction.Application.Behaviours;
 using Auction.Application.Mediator;

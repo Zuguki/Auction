@@ -4,7 +4,7 @@ namespace Auction.Controllers;
 
 [ApiController]
 [Route("api/v1/auctions/lots/bets")]
-public class BetsController : ControllerBase
+public class BetsController : BaseController
 {
     [HttpPost]
     public async Task<IActionResult> DoBetAsync()

@@ -2,12 +2,13 @@ namespace Auction.Domain;
 
 public class Auction
 {
-    public int Id { get; init; }
+    public int Id { get; set; }
     public int AuthorId { get; private set; }
     public string? Name { get; private set; }
     public Dictionary<int, Lot> Lots { get; init; } = new();
     public DateTime DateStart { get; private set; }
     public bool IsCreation { get; private set; }
+    public bool IsCanceled { get; private set; }
 
     private DateTime dateEnd;
 
@@ -15,6 +16,9 @@ public class Auction
     {
         get
         {
+            if (Lots.Count == 0)
+                return dateEnd;
+            
             var maxDate = Lots.Values.SelectMany(l => l.Bets).Max(b => b.DateTime);
             return dateEnd > maxDate ? dateEnd : maxDate;
         }
@@ -25,6 +29,9 @@ public class Auction
     {
         get
         {
+            if (IsCanceled)
+                return AuctionStatus.Cancel;
+            
             if (IsCreation)
                 return AuctionStatus.Creation;
             
@@ -55,4 +62,6 @@ public class Auction
     public void UpdateDateEnd(DateTime dateTime) => DateEnd = dateTime;
 
     public void ChangeIsCreation() => IsCreation = !IsCreation;
+
+    public void Cancel() => IsCanceled = true;
 }

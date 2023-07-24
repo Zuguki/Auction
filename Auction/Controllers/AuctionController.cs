@@ -1,3 +1,4 @@
+using Auction.Application.Auctions.Cancel;
 using Auction.Application.Auctions.Create;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +7,7 @@ namespace Auction.Controllers;
 
 [ApiController]
 [Route("api/v1/auctions")]
-public class AuctionController : ControllerBase
+public class AuctionController : BaseController
 {
     private readonly IMediator mediator;
 
@@ -16,20 +17,14 @@ public class AuctionController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateAuctionAsync(CreateAuctionCommand command, CancellationToken cancellationToken)
-    {
-        var response = await mediator.Send(command, cancellationToken);
-        if (response.IsFailed)
-            return BadRequest(string.Join(',', response.Reasons.Select(r => r.Message)));
-        
-        return Ok();
-    }
+    public async Task<IActionResult> CreateAuctionAsync(CreateAuctionCommand command,
+        CancellationToken cancellationToken) =>
+        ConvertToActionResult(await mediator.Send(command, cancellationToken));
 
     [HttpDelete]
-    public async Task<IActionResult> DeleteAuctionAsync()
-    {
-        return Ok();
-    }
+    public async Task<IActionResult> DeleteAuctionAsync([FromQuery] CancelAuctionCommand command,
+        CancellationToken cancellationToken) =>
+        ConvertToActionResult(await mediator.Send(command, cancellationToken));
 
     [HttpPut]
     public async Task<IActionResult> UpdateAsync()

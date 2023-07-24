@@ -15,7 +15,10 @@ public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
             .FirstOrDefault() + 1;
         
         foreach (var auction in objects)
+        {
+            auction.Id = nextId;
             auctions.TryAdd(nextId, auction);
+        }
 
         return Task.CompletedTask;
     }
@@ -39,6 +42,9 @@ public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
             existedAuction.UpdateDateStart(auction.DateStart);
             existedAuction.UpdateDateEnd(auction.DateEnd);
             existedAuction.ChangeIsCreation();
+
+            if (auction.IsCanceled)
+                existedAuction.Cancel();
         }
 
         return Task.CompletedTask;

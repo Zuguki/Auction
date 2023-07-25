@@ -9,6 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1721e223-b2d2-446a-b7b4-da9bc5fe1ac6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Database/Bet/InMemoryBetsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Database/Bet/InMemoryBetsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/BetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Bet/BetsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/Lot/LotsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Lot/LotsController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +138,7 @@
       <workItem from="1690216202902" duration="19000" />
       <workItem from="1690216231581" duration="2024000" />
       <workItem from="1690218268995" duration="3512000" />
-      <workItem from="1690259476331" duration="9434000" />
+      <workItem from="1690259476331" duration="11552000" />
     </task>
     <servers />
   </component>

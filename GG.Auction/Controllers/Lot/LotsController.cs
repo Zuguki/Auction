@@ -37,7 +37,8 @@ public class LotsController : BaseController
         var result = await mediator.Send(query, cancellationToken);
         if (result.IsFailed)
             return BadRequest(string.Join(", ", result.Reasons.Select(r => r.Message)));
-
+        
+        // TODO: DTO
         return Ok(result.Value);
     }
 }

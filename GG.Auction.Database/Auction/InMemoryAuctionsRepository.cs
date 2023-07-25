@@ -41,7 +41,7 @@ public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
             existedAuction.UpdateName(auction.Name!);
             existedAuction.UpdateDateStart(auction.DateStart);
             existedAuction.UpdateDateEnd(auction.DateEnd);
-            existedAuction.ChangeCreationState();
+            // existedAuction.ChangeCreationState();
 
             if (auction.IsCanceled)
                 existedAuction.Cancel();

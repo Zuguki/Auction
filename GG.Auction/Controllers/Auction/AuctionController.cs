@@ -1,7 +1,10 @@
+using Auction.Controllers.Auction.Dto;
+using FluentResults;
 using GG.Auction.Application.Auctions.Cancel;
 using GG.Auction.Application.Auctions.ChangeCreationAuction;
 using GG.Auction.Application.Auctions.Create;
 using GG.Auction.Application.Auctions.Delete;
+using GG.Auction.Application.Auctions.Get;
 using GG.Auction.Application.Auctions.Update;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -44,8 +47,22 @@ public class AuctionController : BaseController
         ConvertToActionResult(await mediator.Send(command, cancellationToken));
 
     [HttpGet]
-    public async Task<IActionResult> GetAuctionsAsync()
+    public async Task<IActionResult> GetAuctionsAsync([FromQuery] GetAuctionsQuery query,
+        CancellationToken cancellationToken)
     {
-        return Ok();
+        var result = await mediator.Send(query, cancellationToken);
+        if (result.IsFailed)
+            return BadRequest(string.Join(", ", result.Reasons.Select(r => r.Message)));
+
+        var auctionDtos = result.Value.Select(a => new AuctionDto
+        {
+            Id = a.Id,
+            Name = a.Name,
+            Status = a.Status,
+            DateStart = a.DateStart,
+            DateEnd = a.DateEnd,
+        });
+
+        return Ok(auctionDtos);
     }
 }

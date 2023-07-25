@@ -1,4 +1,3 @@
-using GG.Auction.Application.Auctions.Cancel;
 using FluentResults;
 using GG.Auction.Application.Mediator;
 

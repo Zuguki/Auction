@@ -46,7 +46,7 @@ public class Auction
         }
     }
 
-    public bool IsEditable => Status is AuctionStatus.Bidding or AuctionStatus.Complete or AuctionStatus.Cancel;
+    public bool IsEditable => Status is not (AuctionStatus.Bidding or AuctionStatus.Complete or AuctionStatus.Cancel);
 
     public Auction(string name, int authorId, DateTime dateStart, DateTime dateEnd)
     {

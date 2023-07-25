@@ -69,6 +69,43 @@ public class Auction
         
         return Result.Ok(lot);
     }
+    
+    public Result<Lot> RemoveLot(Guid lotId)
+    {
+        if (!IsEditable)
+            return Result.Fail("Данный аукцион нельзя редактировать");
+
+        if (!Lots.Remove(lotId, out var lot))
+            return Result.Fail("В указанном аукционе не найден лот с переданным идентификатором");
+
+        return Result.Ok(lot);
+    }
+
+    public Result<Lot> UpdateLot(Guid lotId, string name, string code, string description, decimal betStep, decimal? buyoutPrice)
+    {
+        if (!IsEditable)
+            return Result.Fail("Данный аукцион нельзя редактировать");
+        
+        if (!Lots.TryGetValue(lotId, out var lot))
+            return Result.Fail("В указанном аукционе не найден лот с переданным идентификатором");
+        
+        var result = lot.UpdateInformation(name, code, description, betStep, buyoutPrice);
+        if (result.IsFailed)
+            return result;
+        
+        return lot;
+    }
+
+    public Result<Bet> DoBet(Guid lotId, Guid userId)
+    {
+        if (IsEditable)
+            return Result.Fail("По данному аукциону нельзя сделать ставку, т.к. он редактируется");
+        
+        if (!Lots.TryGetValue(lotId, out var lot))
+            return Result.Fail("В указанном аукционе не найден лот с переданным идентификатором");
+
+        return lot.TryDoBet(userId);
+    }
 
     public void UpdateName(string name) => Name = name;
 

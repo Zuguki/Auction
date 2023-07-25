@@ -4,7 +4,7 @@ namespace GG.Auction.Database.Bet;
 
 public class InMemoryBetsRepository : IRepository<Domain.Bet>
 {
-    public Task AddAsync(IEnumerable<Domain.Bet> objects, CancellationToken cancellationToken)
+    public Task SaveAsync(IEnumerable<Domain.Bet> objects, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

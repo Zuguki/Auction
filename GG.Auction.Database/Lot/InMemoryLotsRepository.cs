@@ -1,26 +1,37 @@
+using System.Collections.Concurrent;
 using GG.Auction.Application;
 
 namespace GG.Auction.Database.Lot;
 
 public class InMemoryLotsRepository : IRepository<Domain.Lot>
 {
-    public Task AddAsync(IEnumerable<Domain.Lot> objects, CancellationToken cancellationToken)
+    private readonly ConcurrentDictionary<Guid, Domain.Lot> _lots = new();
+    
+    public Task SaveAsync(IEnumerable<Domain.Lot> objects, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        foreach (var lot in objects)
+        {
+            if (_lots.ContainsKey(lot.Id))
+                continue;
+
+            _lots.TryAdd(lot.Id, lot);
+        }
+        
+        return Task.CompletedTask;
     }
 
     public Task DeleteAsync(IEnumerable<Domain.Lot> objects, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(IEnumerable<Domain.Lot> objects, CancellationToken cancellationToken)
-    {
-        throw new NotImplementedException();
+        foreach (var lot in objects)
+        {
+            _lots.TryRemove(lot.Id, out _);
+        }
+        
+        return Task.CompletedTask;
     }
 
     public Task<IReadOnlyCollection<Domain.Lot>> GetAsync(CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return Task.FromResult<IReadOnlyCollection<Domain.Lot>>(_lots.Values.ToArray());
     }
 }

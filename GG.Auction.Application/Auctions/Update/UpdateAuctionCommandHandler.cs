@@ -23,7 +23,7 @@ public class UpdateAuctionCommandHandler : IRequestHandler<UpdateAuctionCommand,
         if (!existedAuction.IsEditable)
             return Result.Fail("По данному аукциону запрещенно менять правила.");
 
-        await unitOfWork.Auctions.UpdateAsync(new[] {existedAuction}, cancellationToken);
+        await unitOfWork.Auctions.SaveAsync(new[] {existedAuction}, cancellationToken);
 
         return Result.Ok();
     }

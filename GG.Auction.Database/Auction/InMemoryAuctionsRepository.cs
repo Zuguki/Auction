@@ -5,19 +5,16 @@ namespace GG.Auction.Database.Auction;
 
 public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
 {
-    private readonly ConcurrentDictionary<int, Domain.Auction> auctions = new();
+    private readonly ConcurrentDictionary<Guid, Domain.Auction> auctions = new();
 
-    public Task AddAsync(IEnumerable<Domain.Auction> objects, CancellationToken cancellationToken)
+    public Task SaveAsync(IEnumerable<Domain.Auction> objects, CancellationToken cancellationToken)
     {
-        var nextId = auctions
-            .Keys
-            .OrderByDescending(r => r)
-            .FirstOrDefault() + 1;
-        
         foreach (var auction in objects)
         {
-            auction.Id = nextId;
-            auctions.TryAdd(nextId, auction);
+            if (auctions.TryGetValue(auction.Id, out _)) 
+                continue;
+            
+            auctions.TryAdd(auction.Id, auction);
         }
 
         return Task.CompletedTask;
@@ -28,25 +25,6 @@ public class InMemoryAuctionsRepository : IRepository<Domain.Auction>
         foreach (var auction in objects)
             auctions.TryRemove(auction.Id, out _);
         
-        return Task.CompletedTask;
-    }
-
-    public Task UpdateAsync(IEnumerable<Domain.Auction> objects, CancellationToken cancellationToken)
-    {
-        foreach (var auction in objects)
-        {
-            if (!auctions.TryGetValue(auction.Id, out var existedAuction))
-                continue;
-            
-            existedAuction.UpdateName(auction.Name!);
-            existedAuction.UpdateDateStart(auction.DateStart);
-            existedAuction.UpdateDateEnd(auction.DateEnd);
-            // existedAuction.ChangeCreationState();
-
-            if (auction.IsCanceled)
-                existedAuction.Cancel();
-        }
-
         return Task.CompletedTask;
     }
 

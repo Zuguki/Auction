@@ -9,7 +9,7 @@ public class ChangeAuctionCreationStateCommandValidator : IValidator<ChangeAucti
     {
         if (request is null)
             return Result.Fail("Не удалось распознать данные.");
-        if (request.AuctionId <= 0)
+        if (request.AuctionId == Guid.Empty)
             return Result.Fail("Передан некорректный идентификатор.");
 
         return Result.Ok();

@@ -24,7 +24,7 @@ public class CancelAuctionCommandHandler : IRequestHandler<CancelAuctionCommand,
             return Result.Fail("Данный аукцион нельзя отменить.");
 
         existedAuction.Cancel();
-        await unitOfWork.Auctions.UpdateAsync(new[] { existedAuction }, cancellationToken);
+        await unitOfWork.Auctions.SaveAsync(new[] { existedAuction }, cancellationToken);
         
         return Result.Ok();
     }

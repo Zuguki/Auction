@@ -10,8 +10,30 @@
   <component name="ChangeListManager">
     <list default="true" id="1721e223-b2d2-446a-b7b4-da9bc5fe1ac6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Cancel/CancelAuctionCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Create/CreateAuctionCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Create/CreateAuctionCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Get/GetAuctionsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Get/GetAuctionsQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Get/GetAuctionsQueryValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Get/GetAuctionsQueryValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Update/UpdateAuctionCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Update/UpdateAuctionCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Update/UpdateAuctionCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/Update/UpdateAuctionCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/GG.Auction.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/GG.Auction.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Application/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Application/IRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GG.Auction.Database/Auction/InMemoryAuctionsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Database/Auction/InMemoryAuctionsRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/AuctionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Auction/AuctionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Database/Bet/InMemoryBetsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Database/Bet/InMemoryBetsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Database/Lot/InMemoryLotsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Database/Lot/InMemoryLotsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Domain/Auction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Domain/Auction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Domain/Bet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Domain/Bet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction.Domain/Lot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction.Domain/Lot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/Auction/AuctionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Auction/AuctionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/Auction/Dto/AuctionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Auction/Dto/AuctionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GG.Auction/Controllers/LotsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GG.Auction/Controllers/Lot/LotsController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +48,7 @@
     <setting file="file://$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GG.Auction.Application/Auctions/Delete/DeleteAuctionCommandValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GG.Auction.Domain/Auction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GG.Auction/Controllers/AuctionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5f76f0c95e04f20b357e36c38d467c939200/21/55a43666/ConcurrentDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2SmA5vu0UlqLpcbgr8uTBYX9XrJ" />
   <component name="ProjectViewState">
@@ -48,9 +70,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/home/flash/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/home/flash/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/home/flash/.local/share/Symbols/src"
+      "/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/Users/goodgod/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/Users/goodgod/.local/share/Symbols/src"
     ]
   }
 }]]></component>
@@ -137,6 +159,7 @@
       <workItem from="1690216202902" duration="19000" />
       <workItem from="1690216231581" duration="2024000" />
       <workItem from="1690218268995" duration="3512000" />
+      <workItem from="1690259476331" duration="7432000" />
     </task>
     <servers />
   </component>
@@ -153,30 +176,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandValidator.cs</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandValidator.cs" initialLine="10" containingFunctionPresentation="Method 'Validate'">
+          <url>file://$PROJECT_DIR$/GG.Auction.Application/Lots/Create/CreateLotCommandValidator.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/GG.Auction.Application/Lots/Create/CreateLotCommandValidator.cs" initialLine="9" containingFunctionPresentation="Method 'Validate'">
             <startOffsets>
-              <option value="364" />
+              <option value="248" />
             </startOffsets>
             <endOffsets>
-              <option value="384" />
+              <option value="268" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandHandler.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/GG.Auction.Application/Auctions/ChangeCreationAuction/ChangeAuctionCreationStateCommandHandler.cs" initialLine="17" containingFunctionPresentation="Method 'Handle'">
+          <url>file://$PROJECT_DIR$/GG.Auction.Application/Lots/Create/CreateLotCommandHandler.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/GG.Auction.Application/Lots/Create/CreateLotCommandHandler.cs" initialLine="16" containingFunctionPresentation="Method 'Handle'">
             <startOffsets>
-              <option value="568" />
+              <option value="435" />
             </startOffsets>
             <endOffsets>
-              <option value="640" />
+              <option value="569" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

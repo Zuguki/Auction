@@ -7,7 +7,7 @@ namespace GG.Auction.Application.Auctions.Update;
 public record UpdateAuctionCommand : IBaseRequest, IRequest<Result>
 {
     [JsonPropertyName("auctionId")]
-    public int AuctionId { get; init; }
+    public Guid AuctionId { get; init; }
     
     [JsonPropertyName("name")]
     public string? Name { get; init; }

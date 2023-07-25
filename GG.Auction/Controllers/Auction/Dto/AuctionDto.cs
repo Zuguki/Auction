@@ -6,7 +6,7 @@ namespace Auction.Controllers.Auction.Dto;
 public record AuctionDto
 {
     [JsonPropertyName("id")]
-    public int Id { get; init; }
+    public Guid Id { get; init; }
     
     [JsonPropertyName("name")]
     public string? Name { get; init; }

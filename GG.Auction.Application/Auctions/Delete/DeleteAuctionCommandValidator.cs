@@ -10,7 +10,7 @@ public class DeleteAuctionCommandValidator : IValidator<DeleteAuctionCommand>
         if (request is null)
             return Result.Fail("Не удалось распознать данные.");
         
-        if (request.AuctionId <= 0)
+        if (request.AuctionId == Guid.NewGuid())
             return Result.Fail("Переданн некорректный идентификатор.");
 
         return Result.Ok();

@@ -7,5 +7,5 @@ namespace GG.Auction.Application.Auctions.Get;
 public record GetAuctionsQuery : IRequest<Result<IEnumerable<Domain.Auction>>>
 {
     [JsonPropertyName("lastAuctionId")]
-    public int? LastAuctionId { get; init; }
+    public Guid? LastAuctionId { get; init; }
 }

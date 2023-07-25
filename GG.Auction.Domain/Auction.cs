@@ -1,11 +1,13 @@
+using FluentResults;
+
 namespace GG.Auction.Domain;
 
 public class Auction
 {
-    public int Id { get; set; }
-    public int AuthorId { get; private set; }
+    public Guid Id { get; init; } = Guid.NewGuid();
+    public Guid AuthorId { get; private set; }
     public string? Name { get; private set; }
-    public Dictionary<int, Lot> Lots { get; init; } = new();
+    public Dictionary<Guid, Lot> Lots { get; init; } = new();
     public DateTime DateStart { get; private set; }
     public bool IsCreation { get; private set; }
     public bool IsCanceled { get; private set; }
@@ -48,13 +50,24 @@ public class Auction
 
     public bool IsEditable => Status is not (AuctionStatus.Bidding or AuctionStatus.Complete or AuctionStatus.Cancel);
 
-    public Auction(string name, int authorId, DateTime dateStart, DateTime dateEnd)
+    public Auction(string name, Guid authorId, DateTime dateStart, DateTime dateEnd)
     {
         Name = name;
         AuthorId = authorId;
         DateStart = dateStart;
         DateEnd = dateEnd;
         IsCreation = true;
+    }
+    
+    public Result<Lot> AddLot(string name, string code, string description, decimal betStep, decimal? buyoutPrice)
+    {
+        if (!IsEditable)
+            return Result.Fail("Данный аукцион нельзя редактировать");
+
+        var lot = new Lot(name, code, description, betStep, buyoutPrice);
+        Lots.Add(lot.Id, lot);
+        
+        return Result.Ok(lot);
     }
 
     public void UpdateName(string name) => Name = name;

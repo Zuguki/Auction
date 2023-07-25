@@ -22,10 +22,10 @@ public class ChangeAuctionCreationStateCommandHandler : IRequestHandler<ChangeAu
             return Result.Fail("Аукциона с переданным аунтефикатором не существует.");
 
         if (!existedAuction.IsEditable) 
-            return Result.Fail("Данный аукцион нельзя отменить.");
+            return Result.Fail("У данного аукционна нельзя изменить статус.");
 
         existedAuction.ChangeCreationState();
-        await unitOfWork.Auctions.UpdateAsync(new[] { existedAuction }, cancellationToken);
+        await unitOfWork.Auctions.SaveAsync(new[] { existedAuction }, cancellationToken);
 
         return Result.Ok();
     }

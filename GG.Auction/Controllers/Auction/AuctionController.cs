@@ -1,5 +1,4 @@
 using Auction.Controllers.Auction.Dto;
-using FluentResults;
 using GG.Auction.Application.Auctions.Cancel;
 using GG.Auction.Application.Auctions.ChangeCreationAuction;
 using GG.Auction.Application.Auctions.Create;
@@ -9,7 +8,7 @@ using GG.Auction.Application.Auctions.Update;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Auction.Controllers;
+namespace Auction.Controllers.Auction;
 
 [ApiController]
 [Route("api/v1/auctions")]

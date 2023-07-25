@@ -7,5 +7,5 @@ namespace GG.Auction.Application.Auctions.Cancel;
 public record CancelAuctionCommand : IRequest<Result>
 {
     [JsonPropertyName("auctionId")]
-    public int AuctionId { get; init; }
+    public Guid AuctionId { get; init; }
 }

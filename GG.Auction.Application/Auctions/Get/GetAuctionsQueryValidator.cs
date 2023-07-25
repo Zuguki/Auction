@@ -10,7 +10,7 @@ public class GetAuctionsQueryValidator : IValidator<GetAuctionsQuery>
         if (request is null)
             return Result.Fail("Не удалось распознать данные.");
 
-        if (request.LastAuctionId is <= 0)
+        if (request.LastAuctionId == Guid.NewGuid())
             return Result.Fail("Передан некорректный идентификатор аукиона.");
 
         return Result.Ok();
